@@ -1,11 +1,21 @@
 
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import DisplayComponent from './Components/DisplayComponent';
 import BtnComponent from './Components/BtnComponent';
 import './App.css';
+import React, { interval, startWith } from "rxjs";
+
+const observable$ = interval(300).pipe(
+  startWith(wait)
+)
+
 
 function App() {
   const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 });
+  useEffect(() => {
+    const sub = observable$.subscribe(setTime);
+    return () => sub.unsubscribe();
+  }, [])
   const [interval, setInterv] = useState();
   const [status, setStatus] = useState(0);
 
