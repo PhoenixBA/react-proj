@@ -78,7 +78,9 @@ body {
 .stopwatch .stopwatch-btn-gre{
   border: 2px solid #00ABA9;
   color: #00ABA9;
+
 }
+
 .stopwatch .stopwatch-btn-red:hover {
   background: #C85454;
   border: 2px solid #C85454;
@@ -94,3 +96,4 @@ body {
   border: 2px solid #00ABA9;
   color: #fff;
 }
+

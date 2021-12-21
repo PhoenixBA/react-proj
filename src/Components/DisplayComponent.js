@@ -14,4 +14,5 @@ function DisplayComponent(props) {
 
 export default DisplayComponent;
 
+
 //<span>{(props.time.ms >= 10)? props.time.ms : "0"+ props.time.ms}</span>&nbsp;:&nbsp;

@@ -31,4 +31,4 @@ function BtnComponent(props) {
   );
 }
 
-export default BtnComponent;
+
