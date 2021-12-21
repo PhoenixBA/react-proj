@@ -30,5 +30,5 @@ function BtnComponent(props) {
     </div>
   );
 }
-
+export default BtnComponent;
 
